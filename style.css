@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+}
+@font-face {
+    font-family: 'Odin_font';
+    src: url("./Norse-Bold.otf") format("opentype");
+}
+:root{
+    --main-color: #000000;
+    --secondary-color: #ffffff;
+    font-family: sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw; 
+    height: 100vh;
+}
+.left{
+    width: 40vw;
+    height: 100vh;
+    background-image: url('./left_background.avif');
+    background-size: cover;
+}
+.right{
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+p .odin{
+    font-family: "Odin_font";
+    font-size: 1em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 8em;    
+    font-family: "Odin_font";
+    margin-top: 20vh;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(7, 8, 6, 0.5);
+}
+
+#icon{
+    height: 80%;   
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start; /* Align items to the start of the flex container */
+
+}
+#middle{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+}
+form>div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+button{
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+button:hover{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+#top,#bottom {
+    text-align: left;
+    /* set a gap between the text and the bottom of the container */
+    
+    
+    margin: 20px;
+    width: 100%; /* Ensure it spans the full width of its container */
+}
+#top>p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+label,input{
+    width: 80%;
+    font-size: 1.2em;}
+legend{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+input{
+    border-radius: 2px;
+    padding: 8px;
+}

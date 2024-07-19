@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div class="left">
+            <div class="title">
+                <img src="odin-lined.png" id="icon" />
+                <p class="odin">Odin</p>
+            </div>
+        </div>
+        <div class="right">
+            <div id="top"><p>This is just some random text I write for fulfilling the text area on this page. <br><br> Sign up to start</p></div>
+            <div id="middle">
+                <form action="submit">
+                    <div>
+                        <label for="Firstname">First Name</label>
+                        <input id="Firstname" type="text" name="firstname" required />
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" required />
+                        <label for="password">Password</label>
+                        <input id="password" type="password" name="password" required />
+                    </div>
+                    <div>
+                        <label for="Lastname">Last Name</label>
+                        <input id="Lastname" type="text" name="lastname" required />
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="tel" name="phone" required />
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" required />
+                    </div>
+                </form>
+            </div>
+            <div id="bottom">
+                <button type="submit">Create Account</button>
+                <p>Already has an account? <a>Log in</a></p>
+            </div>
+        </div>
+</body>
+
+</html>
